@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "wechat4work",
+    "name": "WeChat Of Work",
+    "version": "0.0.6",
+    "publisher": "lishewen",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "往企业微信发送消息",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/wechatofwork.jpg"        
+    },
+    "files": [
+        {
+            "path": "wechat4work"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-wechat4work-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "wechat4work"
+            }
+        }
+    ]
+}
