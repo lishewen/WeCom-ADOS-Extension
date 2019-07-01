@@ -2,19 +2,19 @@
     "manifestVersion": 1,
     "id": "wechat4work",
     "name": "WeChat Of Work",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "lishewen",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
-    ],    
+    ],
     "description": "往企业微信发送消息",
     "categories": [
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/wechatofwork.jpg"        
+        "default": "images/wechatofwork.jpg"
     },
     "files": [
         {
@@ -32,5 +32,13 @@
                 "name": "wechat4work"
             }
         }
-    ]
+    ],
+    "galleryFlags": [
+        "Public"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    }
 }

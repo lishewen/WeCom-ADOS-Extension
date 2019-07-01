@@ -11,7 +11,7 @@
         "Minor": 1,
         "Patch": 0
     },
-    "instanceNameFormat": "发送 $(content)",
+    "instanceNameFormat": "通过Bot往企业微信群发送 $(content)",
     "inputs": [
         {
             "name": "key",
@@ -24,7 +24,7 @@
         {
             "name": "content",
             "type": "string",
-            "label": "内容",
+            "label": "Content",
             "defaultValue": "",
             "required": true,
             "helpMarkDown": "文本内容"
