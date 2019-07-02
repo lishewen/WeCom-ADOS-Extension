@@ -5,17 +5,19 @@ async function run() {
     try {
         const key: string = tl.getInput('key', true);
         const content: string = tl.getInput('content', true);
+        const mentioned_mobile_list: string = tl.getInput('mentioned_mobile_list', false);
 
-        var data = {
+        let data = {
             msgtype: "text",
             text: {
-                content: content
+                content: content,
+                mentioned_mobile_list: mentioned_mobile_list ? mentioned_mobile_list.split(',') : null
             }
         };
 
-        var json = JSON.stringify(data);
+        let json = JSON.stringify(data);
 
-        var options = {
+        let options = {
             host: 'qyapi.weixin.qq.com',
             port: 443,
             path: '/cgi-bin/webhook/send?key=' + key,
@@ -27,7 +29,7 @@ async function run() {
             }
         }
 
-        var req = https.request(options, res => {
+        let req = https.request(options, res => {
             res.setEncoding('utf8');
         });
 

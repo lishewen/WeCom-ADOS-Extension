@@ -15,14 +15,16 @@ function run() {
         try {
             const key = tl.getInput('key', true);
             const content = tl.getInput('content', true);
-            var data = {
+            const mentioned_mobile_list = tl.getInput('mentioned_mobile_list', false);
+            let data = {
                 msgtype: "text",
                 text: {
-                    content: content
+                    content: content,
+                    mentioned_mobile_list: mentioned_mobile_list ? mentioned_mobile_list.split(',') : null
                 }
             };
-            var json = JSON.stringify(data);
-            var options = {
+            let json = JSON.stringify(data);
+            let options = {
                 host: 'qyapi.weixin.qq.com',
                 port: 443,
                 path: '/cgi-bin/webhook/send?key=' + key,
@@ -33,7 +35,7 @@ function run() {
                     'Content-Length': Buffer.byteLength(json)
                 }
             };
-            var req = https.request(options, res => {
+            let req = https.request(options, res => {
                 res.setEncoding('utf8');
             });
             req.on('error', e => {
