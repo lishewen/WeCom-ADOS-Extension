@@ -23,3 +23,6 @@ mocha tests/_suite.js
 ```
 tfx extension create --manifest-globs vss-extension.json --rev-version
 ```
+
+# 相关博客
+http://blog.lishewen.com/post/to-ban-made-tool-for-azure-conversation-writing-plugins
