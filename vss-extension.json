@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "wechat4work",
     "name": "WeChat Of Work",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "lishewen",
     "targets": [
         {
