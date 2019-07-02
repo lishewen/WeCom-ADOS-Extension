@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "wechat4work",
     "name": "WeChat Of Work",
-    "version": "0.0.9",
+    "version": "0.1.1",
     "publisher": "lishewen",
     "targets": [
         {
@@ -40,5 +40,31 @@
         "details": {
             "path": "overview.md"
         }
+    },
+    "screenshots": [
+        {
+            "path": "screenshots/screen1.png"
+        },
+        {
+            "path": "screenshots/screen2.png"
+        },
+        {
+            "path": "screenshots/screen3.png"
+        }
+    ],
+    "links": {
+        "home": {
+            "uri": "http://blog.lishewen.com/"
+        },
+        "repository": {
+            "uri": "https://github.com/lishewen/WeChat4Work-VSS-Extension"
+        },
+        "issues": {
+            "uri": "https://github.com/lishewen/WeChat4Work-VSS-Extension/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/lishewen/WeChat4Work-VSS-Extension"
     }
 }
