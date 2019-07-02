@@ -1,3 +1,6 @@
+# MarketPlace地址
+https://marketplace.visualstudio.com/items?itemName=lishewen.wechat4work
+
 # 企业微信机器人API文档
 https://work.weixin.qq.com/api/doc?notreplace=true#90000/90135/91760
 
