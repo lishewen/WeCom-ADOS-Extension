@@ -1,5 +1,5 @@
 {
-    "id": "dd3a7ed0-5a5e-446a-8617-e463af51e3ff",
+    "id": "e88b52c5-ae96-585e-4540-f5f1832bef94",
     "name": "往企业微信发送消息",
     "friendlyName": "通过Webhook机器人往企业微信群发送消息",
     "description": "通过Webhook机器人往企业微信群发送文本消息",
