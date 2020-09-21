@@ -1,7 +1,7 @@
 {
-  "name": "wechat4work",
-  "version": "1.0.0",
-  "description": "企业微信VSS扩展",
+  "name": "wecom",
+  "version": "0.1.5",
+  "description": "Azure DevOps企业微信扩展",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

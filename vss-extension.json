@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "wechat4work",
-    "name": "WeChat Of Work",
-    "version": "0.1.4",
+    "id": "wecom",
+    "name": "WeCom",
+    "version": "0.1.5",
     "publisher": "lishewen",
     "targets": [
         {
@@ -14,22 +14,22 @@
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/wechatofwork.png"
+        "default": "images/wecom.png"
     },
     "files": [
         {
-            "path": "wechat4work"
+            "path": "wecom"
         }
     ],
     "contributions": [
         {
-            "id": "custom-wechat4work-task",
+            "id": "custom-wecom-task",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "wechat4work"
+                "name": "wecom"
             }
         }
     ],
@@ -57,14 +57,14 @@
             "uri": "http://blog.lishewen.com/"
         },
         "repository": {
-            "uri": "https://github.com/lishewen/WeChat4Work-VSS-Extension"
+            "uri": "https://github.com/lishewen/WeCom-ADOS-Extension"
         },
         "issues": {
-            "uri": "https://github.com/lishewen/WeChat4Work-VSS-Extension/issues"
+            "uri": "https://github.com/lishewen/WeCom-ADOS-Extension/issues"
         }
     },
     "repository": {
         "type": "git",
-        "uri": "https://github.com/lishewen/WeChat4Work-VSS-Extension"
+        "uri": "https://github.com/lishewen/WeCom-ADOS-Extension"
     }
 }
