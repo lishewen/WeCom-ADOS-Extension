@@ -3,9 +3,9 @@ import https = require('https');
 
 async function run() {
     try {
-        const key: string = tl.getInput('key', true);
-        const content: string = tl.getInput('content', true);
-        const mentioned_mobile_list: string = tl.getInput('mentioned_mobile_list', false);
+        const key = tl.getInput('key', true);
+        const content = tl.getInput('content', true);
+        const mentioned_mobile_list = tl.getInput('mentioned_mobile_list', false);
 
         let data = {
             msgtype: "text",
