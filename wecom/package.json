@@ -1,6 +1,6 @@
 {
   "name": "wecom",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Azure DevOps企业微信扩展",
   "main": "index.js",
   "scripts": {
