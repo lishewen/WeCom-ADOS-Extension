@@ -1,6 +1,6 @@
 {
   "name": "wecom",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "description": "Azure DevOps企业微信扩展",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "azure-pipelines-task-lib": "^2.11.1"
+    "azure-pipelines-task-lib": "^3.1.0"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^12.0.10",
+    "@types/node": "12.12.54",
     "@types/q": "^1.5.4"
   }
 }

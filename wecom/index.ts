@@ -4,16 +4,32 @@ import https = require('https');
 async function run() {
     try {
         const key = tl.getInput('key', true);
+        const msgtype = tl.getInput('msgtype', true);
         const content = tl.getInput('content', true);
         const mentioned_mobile_list = tl.getInput('mentioned_mobile_list', false);
 
-        let data = {
-            msgtype: "text",
-            text: {
-                content: content,
-                mentioned_mobile_list: mentioned_mobile_list ? mentioned_mobile_list.split(',') : null
-            }
-        };
+        let data = {};
+        switch (msgtype) {
+            case 'markdown':
+                data = {
+                    msgtype: msgtype,
+                    markdown: {
+                        content: content,
+                        mentioned_mobile_list: mentioned_mobile_list ? mentioned_mobile_list.split(',') : null
+                    }
+                };
+                break;
+            default:
+                data = {
+                    msgtype: msgtype,
+                    text: {
+                        content: content,
+                        mentioned_mobile_list: mentioned_mobile_list ? mentioned_mobile_list.split(',') : null
+                    }
+                };
+                break;
+        }
+
 
         let json = JSON.stringify(data);
 

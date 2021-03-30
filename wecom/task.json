@@ -11,7 +11,7 @@
         "Minor": 1,
         "Patch": 6
     },
-    "instanceNameFormat": "通过Bot往企业微信群发送 $(content)",
+    "instanceNameFormat": "通过Bot往企业微信群发送",
     "inputs": [
         {
             "name": "key",
@@ -22,8 +22,20 @@
             "helpMarkDown": "企业微信机器人Key"
         },
         {
+            "name": "msgtype",
+            "type": "radio",
+            "label": "MsgType",
+            "required": true,
+            "defaultValue": "text",
+            "helpMarkDown": "消息类型",
+            "options": {
+                "text": "文本类型(text)",
+                "markdown": "markdown类型(markdown)"
+            }
+        },
+        {
             "name": "content",
-            "type": "string",
+            "type": "multiLine",
             "label": "Content",
             "defaultValue": "",
             "required": true,
