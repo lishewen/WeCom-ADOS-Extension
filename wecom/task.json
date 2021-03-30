@@ -8,8 +8,8 @@
     "author": "算神",
     "version": {
         "Major": 0,
-        "Minor": 1,
-        "Patch": 6
+        "Minor": 2,
+        "Patch": 3
     },
     "instanceNameFormat": "通过Bot往企业微信群发送",
     "inputs": [
