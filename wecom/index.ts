@@ -6,7 +6,7 @@ async function run() {
         const key = tl.getInput('key', true);
         const msgtype = tl.getInput('msgtype', true);
         const content = tl.getInput('content', true);
-        const mentioned_mobile_list = tl.getInput('mentioned_mobile_list', false);
+        const mentioned_mobile_list = tl.getInput('mentionedmobilelist', false);
 
         let data = {};
         switch (msgtype) {
@@ -29,7 +29,6 @@ async function run() {
                 };
                 break;
         }
-
 
         let json = JSON.stringify(data);
 

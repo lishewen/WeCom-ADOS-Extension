@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "wecom",
     "name": "WeCom",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "publisher": "lishewen",
     "targets": [
         {
